@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/style.css">
+    <title>Cadastro de Livros</title>
+</head>
+
+<body>
+    <section>
+
+        <div class="formulario">
+            <form method="get" action="gravalivro.php">
+                <fieldset>
+                    <legend>Dados do Livro</legend>
+                    <table>
+                        <tr>
+                            <td><label for="titulo">Título:</label></td>
+                            <td><input type="text" id="titulo" ></td>
+                        </tr>
+                        <tr>
+                            <td><label for="edicao">Edição</label></td>
+                            <td><input type="number" id="edicao"></td>
+                        </tr>
+                        <tr>
+                            <td><label for="editora">Editora: </label> </td>
+                            <td>
+                                <select id="editora">
+                                    <option value="nada">Escolhar uma Editora</option>
+                                    <option value="darkside">Darkside</option>
+                                    <option value="saraiva">Saraiva</option>
+                                    <option value="atena">Atena</option>
+                                </select>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td> <label for="formato"> Formato: </label> </td>
+                            <td><input type="checkbox" id="formato"> Físico <input type="checkbox" id="formato">Digital
+                            </td>
+                        </tr>
+                        <tr>
+                            <td><label>Gênero:</label> </td>
+                            <td>
+                                <input type="radio" id="genero" name="genero" value="tecnico"> Técnico
+                                <input type="radio" id="genero" name="genero" value="fantasia"> Fantasia
+                                <input type="radio" id="genero" name="genero" value="terror"> Terror
+                                <input type="radio" id="genero" name="genero" value="romance"> Romance
+                            </td>
+                        </tr>
+                        <tr>
+                            <td><input type="button" value="Enviar"></td>
+                        </tr>
+                    </table>
+                </fieldset>
+            </form>
+        </div>
+    </section>
+</body>
+
+</html>
